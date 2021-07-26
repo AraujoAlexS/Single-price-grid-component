@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla";
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.1);
+}
+
+.top,
+.content-left,
+.content-right {
+  padding: 20px;
+}
+
+.top {
+  background: #fff;
+}
+
+.top .title {
+  color: #2ab2af;
+}
+
+.top .sub-title {
+  color: #c0df34;
+}
+
+.bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.bot .content-left {
+  background: #2ab2af;
+}
+/*# sourceMappingURL=index.css.map */

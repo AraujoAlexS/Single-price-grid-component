@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$Cyan: hsl(179, 62%, 43%);
+$Brigh-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla";
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 14px 16px rgba($color: #000000, $alpha: 0.1);
+}
+
+.top,
+.content-left,
+.content-right {
+  padding: 20px;
+}
+
+.top {
+  background: #fff;
+
+  .title {
+    color: $Cyan;
+  }
+  .sub-title {
+    color: $Brigh-Yellow;
+  }
+}
+
+.bot {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  .content-left {
+    background: $Cyan;
+
+    .content-left-title {
+    }
+  }
+}

@@ -30,7 +30,7 @@ body {
 .top,
 .content-left,
 .content-right {
-  padding: 20px;
+  padding: 30px;
 }
 
 .top {
@@ -38,9 +38,16 @@ body {
 
   .title {
     color: $Cyan;
+    margin: 10px 0px 25px;
   }
   .sub-title {
     color: $Brigh-Yellow;
+    margin: 0px 0px 25px;
+  }
+  .description {
+    font-size: 16px;
+    color: $Grayish-Blue;
+    line-height: 33px;
   }
 }
 
@@ -52,6 +59,73 @@ body {
     background: $Cyan;
 
     .content-left-title {
+      margin-bottom: 25px;
+    }
+
+    .price-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      .price {
+        font-weight: 700;
+        font-size: 34px;
+        margin-bottom: 7px;
+      }
+      .time {
+        position: absolute;
+        color: $Light-Gray;
+        left: 80px;
+        top: 10px;
+      }
+    }
+
+    .btn {
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      width: 100%;
+      height: 45px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 4px 6px 8px rgba($color: #000000, $alpha: 0.1);
+      background: $Brigh-Yellow;
+    }
+  }
+
+  .content-right {
+    background: hsl(179, 52%, 53%);
+
+    &-title {
+      margin-bottom: 25px;
+    }
+    &-text {
+      width: 70%;
+      line-height: 33px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media (min-width: 716px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .bot {
+    flex-direction: row;
+
+    .content-left {
+      width: 50%;
+    }
+    .content-right {
+      width: 50%;
     }
   }
 }
